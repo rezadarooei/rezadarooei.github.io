@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <title>About me</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicons.ico">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script>
+
+        $(function () {
+            //create instance
+            $('.chart').easyPieChart({
+                // animate: 2000
+            });
+
+        });
+    </script>
+    <script src="js/filter.js"></script>
+
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="img/logo.png" alt="My Portfolio" id="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="https://www.resume.com/share/rezadarooei">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section A: Info -->
+    <section id="about-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">
+                Let me tell you a little about myself and what I do...
+            </p>
+            <div class="about-info">
+                <img src="img/about.jpg" alt="" class="bio-image" />
+                <div class="bio bg-light">
+                    <h4 class="my-1">Your Project Is In Safe Hands</h4>
+                    <p class="about-paragraph">
+                        Hello, my name is Reza and I am a game developer. I'm PhD student of biomedical engineering at
+                        Isfahan university medical sciences. I'm the director of <a href="https://gamelab.site123.me/"
+                            target="_blank" class="link">game and treatment lab</a> of Isfahan university medical
+                        sciences. I have signal processing and pattern recognition background because of
+                        that I'm familiar with many machine learning approaches
+                        here is my <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en"
+                            target="_blank" class="link">google scholar page</a> you can visit my recent papers.
+                        <br>
+                        I have a strong perseverance for learning new
+                        things and taking on challenges, and I always like to put some extra time to learn and teach new
+                        things, to make sure the creative vision is achieved in the best possible way.I love to
+                        create new things because of that I start to learn web development.
+                        <br>
+
+                        In the<a href="work.html" target="_blank" class="link">Work</a> section you can see my
+                        projects I've had the opportunity
+                        of contributing to, and some of
+                        the personal-fun-things I've been working on.
+                        If you have any questions please feel free to contact me :)
+
+
+                    </p>
+                </div>
+
+                <div class="award-1">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award One</h3>
+                    <p>
+                        First place of Kando competition(select between best ideas).
+                    </p>
+                </div>
+                <div class="award-2">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Two</h3>
+                    <p>
+                        First place of Iran's english language challenge cup.
+                    </p>
+                </div>
+                <div class="award-3">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Three</h3>
+                    <p>
+                        First place of best idea in 3 minutes in Isfahan University of medical sciences.
+                    </p>
+                </div>
+
+            </div>
+    </section>
+    <section>
+
+    </section>
+    <!-- Section B progress Bar -->
+    <section id="about-b" class="bg-dark py-3">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+
+
+            <h4>Unreal Engine:</h4>
+            <div class="progress">
+                <div style="width:100%"></div>
+            </div>
+            <h4>Unity:</h4>
+            <div class="progress">
+                <div style="width:85%"></div>
+            </div>
+            <h4>Machine learning:</h4>
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+            <h4>C++:</h4>
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+            <h4>c#:</h4>
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+            <h4>Java:</h4>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+
+            <h4>HTML:</h4>
+            <div class="progress">
+                <div style="width:95%"></div>
+            </div>
+            <h4>CSS:</h4>
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+            <h4>JavaScript:</h4>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+            <h4>Python:</h4>
+            <div class="progress">
+                <div style="width:90%"></div>
+            </div>
+
+            <h2 class="section-title">Other Skills</h2>
+            <div class="bottom-line"></div>
+            <div id="myBtnContainer">
+                <button class="btn-light active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-light" onclick="filterSelection('MachineLearning')"> Machine Learning</button>
+                <button class="btn-light" onclick="filterSelection('GameDevelopment')"> Game Development</button>
+                <button class="btn-light" onclick="filterSelection('WebDevelopment')"> Web Development</button>
+            </div>
+            <div class="piechart-skills">
+                <div class="each-skill  filterDiv GameDevelopment">
+                    <h4>Maya:</h4>
+                    <span class="chart" data-percent="78">
+                        <span class="percent">78</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>3D Max:</h4>
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment ">
+                    <h4>Iclone:</h4>
+                    <span class="chart" data-percent="80">
+                        <span class="percent">80</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>Daz3D:</h4>
+                    <span class="chart" data-percent="70">
+                        <span class="percent">70</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CC3(Iclone):</span> </h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CT8 (Iclone):</h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CAT3(Iclone):</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>Camtasia</h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4> adobePP</h4>
+                    <span class="chart" data-percent="40">
+                        <span class="percent">40</span>
+                    </span>
+                </div>
+
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>AndroidStudio:</h4>
+                    <span class="chart" data-percent="50">
+                        <span class="percent">50</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python MachineLearning">
+                    <h4>Keras:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python WebDevelopment ">
+                    <h4>Django:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python MachineLearning">
+                    <h4>Deeplearning:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python MachineLearning">
+                    <h4>MachineLearning:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python MachineLearning">
+                    <h4>RecommenderSystems:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  Python MachineLearning">
+                    <h4>Tensorflow:</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Section About c:Labels -->
+    <section id="about-c" class="bg-light py-4">
+        <div class="container">
+            <div class="about-logo">
+                <img src="img/about-Icons/ue4.jpg" alt="logo">
+                <img src="img/about-Icons/unity.png" alt="logo">
+                <img src="img/about-Icons/python.png" alt="logo">
+                <img src="img/about-Icons/cpp.png" alt="logo">
+                <img src="img/about-Icons/Tensorflow.png" alt="logo">
+                <img src="img/about-Icons/csharp.png" alt="logo">
+                <img src="img/about-Icons/html.png" alt="logo">
+                <img src="img/about-Icons/js.png" alt="logo">
+                <img src="img/about-Icons/css.png" alt="logo">
+                <img src="img/about-Icons/daz3d.png" alt="logo">
+                <img src="img/about-Icons/django.png" alt="logo">
+                <img src="img/about-Icons/1000x1000_whitebk_logo_ic7.png" alt="logo">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About D:Testimonials -->
+    <section id="about-d" class="py-4">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="bottom-line"></div>
+            <p class="lead text-center">Take Look What my clients say...</p>
+            <div class="testimonials">
+                <div>
+                    <p class="about-paragraph">If you need to get a team of skilled developers and people that will
+                        create software for you at
+                        reasonable pricing then you have to talk to Reza. He is a professional and driven person
+                        that will go out of her way to communicate your vision to technical people in order to
+                        understand the work. Friendly and supportive and always willing to listen to her clients. Highly
+                        recommended. Thank you Reza</p>
+                    <ul>
+                        <li><img src="img/testimonials/person4.jpg" alt=""></li>
+                        <li>Melinda Person,Munich</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="about-paragraph">It's not often we get a chance to have our eyes opened to the future.
+                        Reza developed a vision board and some innovative ideas for data science of not tomorrow but new
+                        approaches.
+                        It is with this kind of visionary innovation that we can begin to build the
+                        future of new marketing and develop our thinking of who will lead that future.Proud to be
+                        connected and proud to have
+                        learned so much!</p>
+                    <ul>
+                        <li><img src="img/testimonials/person2.jpg" alt=""></li>
+                        <li>sara habibi,New York</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="about-paragraph">We’ve been successfully working with Reza on
+                        our new Gaming App. The
+                        following words describe our experience: knowledgeable, fast, reliable, transparent. Bravo!
+                        <br>
+                        I've met few people in the like Reza both a strong knowledge of
+                        technology and a deep empathy for the viewer that allows him to understand what's relevant in an
+                        experience. In theses times when emerging technologies redefine the experience of watching a
+                        game.
+                    </p>
+                    <ul>
+                        <li><img src="img/testimonials/person3.jpg" alt=""></li>
+                        <li>Milad Nazari,Tehran</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Reza is one of the most dedicated professionals who have great skills and profound experience of
+                        data sciences, VR, and AR and web development.
+                        <br>
+                        He is a detail oriented, target oriented, ambitious and strong partner who is Available anytime
+                        for help, support, and the business is always the most important thing to do. Effective &
+                        professional communication.</p>
+                    <ul>
+                        <li><img src="img/testimonials/person1.jpg" alt=""></li>
+                        <li>Vahid Sadeghi,Shiraz</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy;2019.All Rights Reserved.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/reza.darooie" target="_blank"> <i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/reza-darooei-ba74b3172/" target="_blank"> <i
+                        class="fab fa-linkedin"></i> </a>
+                <i class="fab fa-instagram"></i>
+                <a href="https://github.com/rezadarooei" target="_blank"> <i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UC_TckjvFnxUp0wRrZqsTYoQ?view_as=subscriber" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank"> <i
+                        class="ai ai-google-scholar-square "></i></a>
+                <a href="https://www.resume.com/share/rezadarooei" target="_blank"> <i class="ai ai-cv "></i></a>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=reza+darooei" target="_blank"> <i
+                        class="ai ai-pubmed "></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
