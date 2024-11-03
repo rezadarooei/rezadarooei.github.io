@@ -1,0 +1,14 @@
+{
+  "name": "porfoliowebsite",
+  "version": "1.0.0",
+  "description": "Reza Darooei Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Reza Darooei",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
