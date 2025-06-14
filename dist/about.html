@@ -1,98 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<section id="about-a" class="text-center py-3">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="bottom-line"></div>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
-    <title>About me</title>
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/favicons.ico" />
-</head>
+    <p class="lead">Let me tell you a little about myself and what I do...</p>
 
-<body>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/jquery.easypiechart.js"></script>
-    <script>
-        $(function () {
-            //create instance
-            $(".chart").easyPieChart({
-                // animate: 2000
-            });
-        });
-    </script>
-    <script src="js/filter.js"></script>
+    <div class="about-info d-flex flex-wrap align-items-center justify-content-center gap-4">
 
-    <header id="header-inner">
-        <div class="container">
-            <nav id="main-nav">
-                <img src="img/logo.png" alt="My Portfolio" id="logo" />
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="current">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="https://www.resume.com/share/rezadarooei">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <!-- Profile Image -->
+      <img
+        src="img/about.jpg"
+        alt="Reza Darooei"
+        class="bio-image"
+        style="max-width: 280px; border-radius: 12px; box-shadow: 0 8px 15px rgba(0,0,0,0.15);"
+      />
 
-    <!-- Section A: Info -->
-    <section id="about-a" class="text-center py-3">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="bottom-line"></div>
-            <p class="lead">
-                Let me tell you a little about myself and what I do...
-            </p>
-            <div class="about-info">
-                <img src="img/about.jpg" alt="Reza Darooei" class="bio-image" />
-                <div class="bio bg-light">
-                    <h4 class="my-1">Your Project Is In Safe Hands</h4>
-                    <p class="about-paragraph">
-                        Hi, I’m Reza — a passionate game developer and PhD candidate in Biomedical Engineering at Isfahan University of Medical Sciences. I lead the
-                        <a href="https://gamelab.site123.me/" target="_blank" class="link">Game and Treatment Lab</a>, where we explore the intersection of interactive technology, neuroscience, and therapy.
-                        <br /><br />
-                        With a strong foundation in signal processing and pattern recognition, I’ve naturally expanded into machine learning and deep learning, applying these techniques in both academic research and real-world development. You can check out my recent publications on my
-                        <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank" class="link">Google Scholar</a>.
-                        <br /><br />
-                        I thrive on solving complex problems, pushing creative boundaries, and constantly learning new technologies. This curiosity led me to master not only game engines like Unity and Unreal Engine, but also dive into full-stack web development to bring my ideas to life.
-                        <br /><br />
-                        Whether it's building therapeutic games, developing AI models, or designing interactive web platforms, I’m driven by a desire to make meaningful and innovative contributions.
-                        <br /><br />
-                        Visit the <a href="work.html" target="_blank" class="link">Work</a> section to explore my latest projects and creative experiments. If you have a project idea or just want to connect, feel free to reach out — I’d love to hear from you!
-                    </p>
-                </div>
+      <!-- Bio Text -->
+      <div class="bio bg-light p-4" style="max-width: 700px; text-align: left; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h4 class="my-2">Your Project Is In Safe Hands</h4>
+        <p>
+          Hi, I’m <strong>Reza Darooei</strong> — a passionate game developer and
+          PhD candidate in Biomedical Engineering at Isfahan University of Medical Sciences.
+          I lead the <a href="https://gamelab.site123.me/" target="_blank" class="link">Game and Treatment Lab</a>,
+          where we explore the intersection of interactive technology, neuroscience, and therapy.
+        </p>
+        <p>
+          With a strong foundation in signal processing and pattern recognition, I have expanded into
+          machine learning and deep learning, applying these techniques in both academic research and real-world development.
+          You can check out my recent publications on my
+          <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank" class="link">Google Scholar</a>.
+        </p>
+        <p>
+          I thrive on solving complex problems, pushing creative boundaries, and constantly learning new technologies.
+          This curiosity led me to master game engines like Unity and Unreal Engine, as well as full-stack web development.
+        </p>
+        <p>
+          Whether it’s therapeutic games, AI models, or interactive web platforms, I’m driven to make meaningful and innovative contributions.
+          Feel free to visit the <a href="work.html" target="_blank" class="link">Work</a> section to see my latest projects or contact me anytime!
+        </p>
+      </div>
+    </div>
 
-                <div class="award-1">
-                    <i class="fas fa-award fa-3x"></i>
-                    <h3>Award One</h3>
-                    <p>First place of Kando competition (selected among best ideas).</p>
-                </div>
-                <div class="award-2">
-                    <i class="fas fa-award fa-3x"></i>
-                    <h3>Award Two</h3>
-                    <p>First place in Iran's English Language Challenge Cup.</p>
-                </div>
-                <div class="award-3">
-                    <i class="fas fa-award fa-3x"></i>
-                    <h3>Award Three</h3>
-                    <p>First place for Best Idea in 3 Minutes at Isfahan University of Medical Sciences.</p>
-                </div>
-            </div>
-    </section>
+    <!-- Awards Section -->
+    <div class="awards mt-5 d-flex flex-wrap justify-content-center gap-4">
 
-    <!-- ... rest of your content unchanged ... -->
+      <div class="award-1 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
+        <h3>Award One</h3>
+        <p>First place in Kando competition (selected among best ideas).</p>
+      </div>
 
-</body>
+      <div class="award-2 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
+        <h3>Award Two</h3>
+        <p>First place in Iran's English Language Challenge Cup.</p>
+      </div>
 
-</html>
+      <div class="award-3 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
+        <h3>Award Three</h3>
+        <p>First place for Best Idea in 3 Minutes at Isfahan University of Medical Sciences.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
