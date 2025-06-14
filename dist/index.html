@@ -2,183 +2,119 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-  <title>Reza Darooei | Game/Web Developer & ML Engineer</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="img/favicons.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <title>Reza Darooei | Game/Web Developer & ML Engineer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicons.ico">
+    <style>
+        .btn-light {
+            display: inline-block;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .fade-in-delay-1 {
+            animation-delay: 0.3s;
+        }
+
+        .fade-in-delay-2 {
+            animation-delay: 0.6s;
+        }
+
+        .fade-in-delay-3 {
+            animation-delay: 0.9s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header id="header-home">
-    <div class="container">
-      <nav id="main-nav">
-        <img src="img/logo.png" alt="My Portfolio" id="logo">
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="https://www.resume.com/share/rezadarooei">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-content">
-        <h1>
-          I Am Reza The
-          <span class="txt-type" data-wait="3000"
-            data-words='["Game Developer","Web Developer","Data Scientist","Biomedical Student"]'>
-          </span>
-        </h1>
-        <p class="lead">
-          I specialize in Game Development, Web Development, and Data Science, with a strong focus on research-driven and immersive technologies.
-        </p>
-        <a href="work.html" class="btn-light">View my Work</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- section a:specialize in -->
- <!-- section a: I Specialize In -->
-<section id="home-a" class="text-center py-2" style="background: #f9f9f9;">
-  <div class="container">
-    <h2 class="section-title">What I Specialize In</h2>
-    <div class="bottom-line" style="margin-bottom: 1rem;"></div>
-    <p class="lead" style="max-width: 800px; margin: 0 auto;">
-      As a Postdoctoral Researcher at the <a href="https://seg.inf.unibe.ch/" target="_blank">Software Engineering Group (SEG)</a> at the University of Bern, Switzerland, I focus on Virtual Reality, intelligent systems, and data-driven applications with real-world impact.
-    </p>
-
-    <div class="specials" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
-      <!-- Game Development Card -->
-      <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-        <i class="fas fa-gamepad fa-3x" style="color: #007BFF;"></i>
-        <h3 style="margin-top: 1rem;">Game Development</h3>
-        <p style="line-height: 1.6;">
-          I develop serious games using <strong>Unity</strong> and <strong>Unreal Engine</strong>, focusing on medical training, visualization, and user-centered VR environments for health tech.
-        </p>
-      </div>
-
-      <!-- Data Science Card -->
-      <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-        <i class="fas fa-database fa-3x" style="color: #28A745;"></i>
-        <h3 style="margin-top: 1rem;">Data Science & Signal Processing</h3>
-        <p style="line-height: 1.6;">
-          I apply machine learning and advanced signal processing techniques to biomedical and human-centered data, backed by strong academic and real-world research experience.
-        </p>
-      </div>
-
-      <!-- Web & System Design Card -->
-      <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
-        <i class="fas fa-code fa-3x" style="color: #FF5722;"></i>
-        <h3 style="margin-top: 1rem;">Web Development & Architecture</h3>
-        <p style="line-height: 1.6;">
-          I build responsive web applications and research-driven tools with clean architecture and scalable design, often used for research dashboards and user interfaces.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Section b:Stats -->
-  <section id="home-b" class="text-center py-2">
-    <div class="stats">
-      <div>
-        <ul>
-          <li><i class="fas fa-users fa-3x"></i></li>
-          <li class="stats-title">Clients</li>
-          <li class="stats-number">20</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-award fa-3x"></i></li>
-          <li class="stats-title">Awards</li>
-          <li class="stats-number">3</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-          <li class="stats-title">Hours Worked</li>
-          <li class="stats-number">3500</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fas fa-code-branch fa-3x"></i></li>
-          <li class="stats-title">Projects Completed</li>
-          <li class="stats-number">25</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- section c:Process -->
-  <section id="home-c" class="text-center py-2">
-    <div class="container">
-      <h2 class="section-title">My Creative Process</h2>
-      <div class="bottom-line"></div>
-      <p class="lead">
-        Every project follows a refined and structured process to ensure optimal results and client satisfaction.
-      </p>
-      <div class="process">
-        <div>
-          <i class="fas fa-file-alt fa-4x process-icon my-2">
-            <div class="process-step">1</div>
-          </i>
-          <h3>Project Discussion</h3>
-          <p>We begin by understanding your needs and defining project goals together.</p>
+    <header id="header-home">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="img/logo.png" alt="My Portfolio" id="logo">
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="https://www.canva.com/design/DAGbi-TpbwA/k90DlQWh7rl0Ssjm3t7BWg/edit?utm_content=DAGbi-TpbwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content fade-in fade-in-delay-1">
+                <h1>
+                    I Am Reza The
+                    <span class="txt-type" data-wait="3000"
+                        data-words='["Game Developer","Web Developer","Data Scientist","Biomedical student"]'>
+                    </span>
+                </h1>
+                <p class="lead fade-in fade-in-delay-2">I'm specialize on Game development, Web development and data science</p>
+                <a href="work.html" class="btn-light fade-in fade-in-delay-3">View my Work</a>
+            </div>
         </div>
-        <div>
-          <i class="fas fa-desktop fa-4x process-icon my-2">
-            <div class="process-step">2</div>
-          </i>
-          <h3>Brainstorming & Concepts</h3>
-          <p>Collaborative ideation to craft efficient, creative, and tailored solutions.</p>
-        </div>
-        <div>
-          <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-            <div class="process-step">3</div>
-          </i>
-          <h3>Project Planning</h3>
-          <p>We plan carefully to ensure deliverables meet your expectations and timeline.</p>
-        </div>
-        <div>
-          <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-            <div class="process-step">4</div>
-          </i>
-          <h3>Interactive Delivery</h3>
-          <p>Final delivery includes feedback integration and ongoing collaboration for refinement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer id="main-footer">
-    <div class="footer-content container">
-      <p>Copyright &copy; 2019. All Rights Reserved.</p>
-      <div class="social">
-        <a href="https://www.facebook.com/reza.darooie" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/reza-darooei/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <i class="fab fa-instagram"></i>
-        <a href="https://github.com/rezadarooei" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.youtube.com/channel/UC_TckjvFnxUp0wRrZqsTYoQ?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square"></i></a>
-        <a href="https://www.canva.com/design/DAGbi-TpbwA/k90DlQWh7rl0Ssjm3t7BWg/edit?utm_content=DAGbi-TpbwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><i class="ai ai-cv"></i></a>
-        <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=reza+darooei" target="_blank"><i class="ai ai-pubmed"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Typewriter effect -->
-  <script src="js/typewriter.js"></script>
-
+    <section id="home-a" class="text-center py-2" style="background: #f9f9f9;">
+        <div class="container">
+            <h2 class="section-title fade-in">What I Specialize In</h2>
+            <div class="bottom-line fade-in fade-in-delay-1" style="margin-bottom: 1rem;"></div>
+            <p class="lead fade-in fade-in-delay-2" style="max-width: 800px; margin: 0 auto;">
+                As a Postdoctoral Researcher at the <a href="https://seg.inf.unibe.ch/" target="_blank">Software Engineering Group (SEG)</a> at the University of Bern, Switzerland, I focus on Virtual Reality, intelligent systems, and data-driven applications with real-world impact.
+            </p>
+            <div class="specials fade-in fade-in-delay-3" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
+                <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <i class="fas fa-gamepad fa-3x" style="color: #007BFF;"></i>
+                    <h3 style="margin-top: 1rem;">Game Development</h3>
+                    <p style="line-height: 1.6;">
+                        I develop serious games using <strong>Unity</strong> and <strong>Unreal Engine</strong>, focusing on medical training, visualization, and user-centered VR environments for health tech.
+                    </p>
+                </div>
+                <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <i class="fas fa-database fa-3x" style="color: #28A745;"></i>
+                    <h3 style="margin-top: 1rem;">Data Science & Signal Processing</h3>
+                    <p style="line-height: 1.6;">
+                        I apply machine learning and advanced signal processing techniques to biomedical and human-centered data, backed by strong academic and real-world research experience.
+                    </p>
+                </div>
+                <div style="flex: 1 1 300px; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <i class="fas fa-code fa-3x" style="color: #FF5722;"></i>
+                    <h3 style="margin-top: 1rem;">Web Development & Architecture</h3>
+                    <p style="line-height: 1.6;">
+                        I build responsive web applications and research-driven tools with clean architecture and scalable design, often used for research dashboards and user interfaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
