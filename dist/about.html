@@ -1,67 +1,302 @@
-<section id="about-a" class="text-center py-3">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="bottom-line"></div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <p class="lead">Let me tell you a little about myself and what I do...</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+    <title>About me</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/favicons.ico" />
+</head>
 
-    <div class="about-info d-flex flex-wrap align-items-center justify-content-center gap-4">
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script>
+        $(function () {
+            //create instance
+            $('.chart').easyPieChart({
+                // animate: 2000
+            });
+        });
+    </script>
+    <script src="js/filter.js"></script>
 
-      <!-- Profile Image -->
-      <img
-        src="img/about.jpg"
-        alt="Reza Darooei"
-        class="bio-image"
-        style="max-width: 280px; border-radius: 12px; box-shadow: 0 8px 15px rgba(0,0,0,0.15);"
-      />
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="img/logo.png" alt="My Portfolio" id="logo" />
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="https://www.resume.com/share/rezadarooei">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <!-- Bio Text -->
-      <div class="bio bg-light p-4" style="max-width: 700px; text-align: left; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <h4 class="my-2">Your Project Is In Safe Hands</h4>
-        <p>
-          Hi, I’m <strong>Reza Darooei</strong> — a passionate game developer and
-          PhD candidate in Biomedical Engineering at Isfahan University of Medical Sciences.
-          I lead the <a href="https://gamelab.site123.me/" target="_blank" class="link">Game and Treatment Lab</a>,
-          where we explore the intersection of interactive technology, neuroscience, and therapy.
-        </p>
-        <p>
-          With a strong foundation in signal processing and pattern recognition, I have expanded into
-          machine learning and deep learning, applying these techniques in both academic research and real-world development.
-          You can check out my recent publications on my
-          <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank" class="link">Google Scholar</a>.
-        </p>
-        <p>
-          I thrive on solving complex problems, pushing creative boundaries, and constantly learning new technologies.
-          This curiosity led me to master game engines like Unity and Unreal Engine, as well as full-stack web development.
-        </p>
-        <p>
-          Whether it’s therapeutic games, AI models, or interactive web platforms, I’m driven to make meaningful and innovative contributions.
-          Feel free to visit the <a href="work.html" target="_blank" class="link">Work</a> section to see my latest projects or contact me anytime!
-        </p>
-      </div>
-    </div>
+    <!-- Section A: Info -->
+    <section id="about-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">
+                Let me tell you a little about myself and what I do...
+            </p>
+            <div class="about-info">
+                <img src="img/about.jpg" alt="" class="bio-image" />
+                <div class="bio bg-light">
+                    <h4 class="my-1">Your Project Is In Safe Hands</h4>
+                    <p class="about-paragraph">
+                        Hello! I'm <strong>Reza Darooei</strong>, a PhD student in Biomedical Engineering at Isfahan University of Medical Sciences, and
+                        the director of the <a href="https://gamelab.site123.me/" target="_blank" class="link">Game and Treatment Lab</a>.
+                        I specialize in game development, signal processing, pattern recognition, and machine learning — passionate about blending
+                        technology with healthcare to create impactful interactive experiences.
+                    </p>
+                    <p class="about-paragraph">
+                        With strong skills in Unity and Unreal Engine, I develop engaging applications aimed at improving therapy and research.
+                        My background in deep learning and signal processing enables me to craft intelligent, adaptive systems tailored to user needs.
+                    </p>
+                    <p class="about-paragraph">
+                        You can check out my latest research and publications on my
+                        <a href="https://scholar.google.com/citations?user=PK2kDN8AAAAJ&hl=en" target="_blank" class="link">Google Scholar profile</a>.
+                        I’m always eager to learn, take on new challenges, and share knowledge to ensure creative visions are realized in the best way.
+                    </p>
+                    <p class="about-paragraph">
+                        Feel free to visit my <a href="work.html" target="_blank" class="link">Work</a> section to see my projects, or contact me anytime for
+                        questions or collaborations.
+                    </p>
+                </div>
 
-    <!-- Awards Section -->
-    <div class="awards mt-5 d-flex flex-wrap justify-content-center gap-4">
+                <div class="award-1">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award One</h3>
+                    <p>
+                        First place of Kando competition (selected among best ideas).
+                    </p>
+                </div>
+                <div class="award-2">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Two</h3>
+                    <p>
+                        First place of Iran's English Language Challenge Cup.
+                    </p>
+                </div>
+                <div class="award-3">
+                    <i class="fas fa-award fa-3x"></i>
+                    <h3>Award Three</h3>
+                    <p>
+                        First place for Best Idea in 3 Minutes at Isfahan University of Medical Sciences.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section>
 
-      <div class="award-1 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
-        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
-        <h3>Award One</h3>
-        <p>First place in Kando competition (selected among best ideas).</p>
-      </div>
+    </section>
+    <!-- Section B progress Bar -->
+    <section id="about-b" class="bg-dark py-3">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
 
-      <div class="award-2 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
-        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
-        <h3>Award Two</h3>
-        <p>First place in Iran's English Language Challenge Cup.</p>
-      </div>
+            <h4>Unreal Engine:</h4>
+            <div class="progress">
+                <div style="width:100%"></div>
+            </div>
+            <h4>Unity:</h4>
+            <div class="progress">
+                <div style="width:85%"></div>
+            </div>
+            <h4>Machine learning:</h4>
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+            <h4>C++:</h4>
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+            <h4>c#:</h4>
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+            <h4>Java:</h4>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
 
-      <div class="award-3 text-center p-3" style="max-width: 220px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
-        <i class="fas fa-award fa-3x" style="color: #f5a623;"></i>
-        <h3>Award Three</h3>
-        <p>First place for Best Idea in 3 Minutes at Isfahan University of Medical Sciences.</p>
-      </div>
+            <h4>HTML:</h4>
+            <div class="progress">
+                <div style="width:95%"></div>
+            </div>
+            <h4>CSS:</h4>
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+            <h4>JavaScript:</h4>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+            <h4>Python:</h4>
+            <div class="progress">
+                <div style="width:90%"></div>
+            </div>
 
-    </div>
-  </div>
-</section>
+            <h2 class="section-title">Other Skills</h2>
+            <div class="bottom-line"></div>
+            <div id="myBtnContainer">
+                <button class="btn-light active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-light" onclick="filterSelection('MachineLearning')"> Machine Learning</button>
+                <button class="btn-light" onclick="filterSelection('GameDevelopment')"> Game Development</button>
+                <button class="btn-light" onclick="filterSelection('WebDevelopment')"> Web Development</button>
+            </div>
+            <div class="piechart-skills">
+                <div class="each-skill  filterDiv GameDevelopment">
+                    <h4>Maya:</h4>
+                    <span class="chart" data-percent="78">
+                        <span class="percent">78</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>3D Max:</h4>
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment ">
+                    <h4>Iclone:</h4>
+                    <span class="chart" data-percent="80">
+                        <span class="percent">80</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>Daz3D:</h4>
+                    <span class="chart" data-percent="70">
+                        <span class="percent">70</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CC3(Iclone):</h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CT8 (Iclone):</h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>CAT3(Iclone):</h4>
+                    <span class="chart" data-percent="86">
+                        <span class="percent">83</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4>Camtasia</h4>
+                    <span class="chart" data-percent="100">
+                        <span class="percent">100</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv  GameDevelopment">
+                    <h4> adobePP</h4>
+                    <span class="chart" data-percent="40">
+                        <span class="percent">40</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv MachineLearning">
+                    <h4> Tensorflow:</h4>
+                    <span class="chart" data-percent="85">
+                        <span class="percent">85</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv MachineLearning">
+                    <h4> PyTorch:</h4>
+                    <span class="chart" data-percent="75">
+                        <span class="percent">75</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv MachineLearning">
+                    <h4> Python (Data Science):</h4>
+                    <span class="chart" data-percent="90">
+                        <span class="percent">90</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv WebDevelopment">
+                    <h4> HTML:</h4>
+                    <span class="chart" data-percent="95">
+                        <span class="percent">95</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv WebDevelopment">
+                    <h4> CSS:</h4>
+                    <span class="chart" data-percent="80">
+                        <span class="percent">80</span>
+                    </span>
+                </div>
+                <div class="each-skill filterDiv WebDevelopment">
+                    <h4> JavaScript:</h4>
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section C Education -->
+    <section id="about-c" class="py-3">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="bottom-line"></div>
+            <div class="education-info">
+                <div class="education-item">
+                    <h3>PhD in Biomedical Engineering</h3>
+                    <h4>Isfahan University of Medical Sciences</h4>
+                    <p>2017 - Present</p>
+                    <p>Specialized in machine learning, signal processing, and game-based treatment approaches.</p>
+                </div>
+                <div class="education-item">
+                    <h3>MSc in Biomedical Engineering</h3>
+                    <h4>Isfahan University of Medical Sciences</h4>
+                    <p>2013 - 2016</p>
+                    <p>Focused on biomedical signal processing and therapeutic game design.</p>
+                </div>
+                <div class="education-item">
+                    <h3>BSc in Biomedical Engineering</h3>
+                    <h4>Isfahan University of Medical Sciences</h4>
+                    <p>2008 - 2013</p>
+                    <p>Completed undergraduate studies with a concentration on medical imaging and machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section D Contact -->
+    <section id="about-d" class="bg-dark py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bottom-line"></div>
+            <p>You can reach out to me via email, social media, or LinkedIn.</p>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> <a href="mailto:rezadarooei@example.com" class="link">rezadarooei@example.com</a></li>
+                <li><i class="fas fa-phone"></i> +98 912 345 6789</li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rezadarooei" target="_blank" class="link">LinkedIn Profile</a></li>
+                <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/rezadarooei" target="_blank" class="link">@rezadarooei</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-center py-2">
+        <p>Copyright &copy; 2025 Reza Darooei</p>
+    </footer>
+</body>
+
+</html>
