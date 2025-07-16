@@ -593,13 +593,14 @@ img {
 .language-circles {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .lang-box {
   text-align: center;
+  width: 150px;
 }
 
 .circle {
@@ -614,6 +615,7 @@ img {
   font-size: 1rem;
   color: #333;
   position: relative;
+  margin: auto;
 }
 
 .circle::before {
@@ -629,12 +631,13 @@ img {
 .circle span {
   position: relative;
   z-index: 2;
+  font-size: 0.95rem;
 }
 
 .level-text {
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   font-weight: 600;
   color: #fff;
+  font-size: 0.95rem;
 }
-
 
