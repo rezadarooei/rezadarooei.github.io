@@ -590,7 +590,7 @@ img {
   text-align: center;
   transition: width 2s ease;
 }
-.language-pies {
+.language-circles {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -598,41 +598,42 @@ img {
   margin-top: 2rem;
 }
 
-.lang-chart {
+.lang-box {
   text-align: center;
 }
 
-.lang-chart svg {
+.circle {
   width: 120px;
   height: 120px;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #eee;
-  stroke-width: 3.8;
-}
-
-.circle {
-  fill: none;
-  stroke: #ffbc00;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  transition: stroke-dasharray 1s ease;
-}
-
-.percentage {
-  font-size: 0.35rem;
-  text-anchor: middle;
-  fill: #333;
-  font-family: 'Dosis', sans-serif;
-}
-
-.label {
-  margin-top: 0.5rem;
-  display: block;
+  border-radius: 50%;
+  background: conic-gradient(var(--color) calc(var(--value) * 1%), #eee 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: 1rem;
+  color: #333;
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle span {
+  position: relative;
+  z-index: 2;
+}
+
+.level-text {
+  margin-top: 0.5rem;
+  font-weight: 600;
   color: #fff;
 }
 
