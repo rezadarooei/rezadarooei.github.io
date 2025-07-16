@@ -11,6 +11,23 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="icon" href="img/favicons.ico" />
 </head>
+  <script>
+  // Animate skill bars when they enter the viewport
+  function animateSkills() {
+    const bars = document.querySelectorAll('.progress-bar');
+    bars.forEach(bar => {
+      const rect = bar.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        const targetWidth = bar.getAttribute('data-value');
+        bar.style.width = targetWidth;
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateSkills);
+  window.addEventListener('load', animateSkills);
+</script>
+
 <body>
   <!-- Header -->
   <header id="header-inner">
@@ -99,7 +116,7 @@
       <div class="bottom-line"></div>
 
       <h4 class="my-2">Programming & Tools</h4>
-      <div class="progress"><div style="width:90%">Python</div></div>
+      <div class="progress"><div class="progress-bar" data-value="90%">Python</div></div>
       <div class="progress"><div style="width:85%">MATLAB</div></div>
       <div class="progress"><div style="width:80%">C++</div></div>
       <div class="progress"><div style="width:75%">C#</div></div>
