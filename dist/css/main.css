@@ -323,7 +323,8 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio'
+ 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -436,7 +437,9 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -531,7 +534,11 @@ img {
       padding: 2rem;
       height: 7rem; }
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'aw1'
+ 'aw2'
+ 'aw3'; }
   #about-b #myBtnContainer {
     display: grid;
     grid-gap: .5rem; }
@@ -542,7 +549,11 @@ img {
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'phone' 'email' 'message'; }
+    grid-template-areas: 'name'
+ 'subject'
+ 'phone'
+ 'email'
+ 'message'; }
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -561,3 +572,22 @@ img {
 @media (max-height: 330px) {
   #header-home .header-content h1 {
     font-size: 2rem; } }
+
+.progress {
+  background: #ccc;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: .6rem;
+}
+
+.progress-bar {
+  background: #ffbc00;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  line-height: 20px;
+  text-align: center;
+  transition: width 2s ease;
+}
+
