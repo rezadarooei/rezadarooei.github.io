@@ -590,7 +590,7 @@ img {
   text-align: center;
   transition: width 2s ease;
 }
-.language-section {
+.language-pies {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -598,45 +598,41 @@ img {
   margin-top: 2rem;
 }
 
-.language-card {
-  background: #f4f4f4;
-  padding: 1.5rem;
-  border-radius: 12px;
-  width: 180px;
+.lang-chart {
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
-.language-card:hover {
-  transform: translateY(-5px);
+.lang-chart svg {
+  width: 120px;
+  height: 120px;
 }
 
-.language-card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  color: #333;
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
 }
 
-.level {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  border-radius: 30px;
+.circle {
+  fill: none;
+  stroke: #ffbc00;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.percentage {
+  font-size: 0.35rem;
+  text-anchor: middle;
+  fill: #333;
+  font-family: 'Dosis', sans-serif;
+}
+
+.label {
+  margin-top: 0.5rem;
+  display: block;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #fff;
-}
-
-.level.native {
-  background-color: #28a745;
-}
-
-.level.fluent {
-  background-color: #007bff;
-}
-
-.level.intermediate {
-  background-color: #ffc107;
-  color: #000;
 }
 
