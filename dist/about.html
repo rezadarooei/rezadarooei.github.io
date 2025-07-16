@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>About Reza Darooei</title>
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="icon" href="img/favicons.ico" />
+  <style>
+    .progress-bar {
+      background: #ffbc00;
+      color: #000;
+      font-weight: bold;
+      height: 100%;
+      width: 0;
+      line-height: 20px;
+      text-align: left;
+      padding-left: 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: width 2s ease;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .item {
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-  <script>
-  // Animate skill bars when they enter the viewport
-  function animateSkills() {
-    const bars = document.querySelectorAll('.progress-bar');
-    bars.forEach(bar => {
-      const rect = bar.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        const targetWidth = bar.getAttribute('data-value');
-        bar.style.width = targetWidth;
-      }
-    });
-  }
-
-  window.addEventListener('scroll', animateSkills);
-  window.addEventListener('load', animateSkills);
-</script>
-
 <body>
+
   <!-- Header -->
   <header id="header-inner">
     <div class="container">
@@ -88,28 +98,29 @@
       </div>
     </div>
   </section>
-<!-- Section: Grants -->
-<section id="grants" class="py-3 text-center">
-  <div class="container">
-    <h2 class="section-title">Grants</h2>
-    <div class="bottom-line"></div>
-    <p class="lead">
-      I've been honored to receive prestigious grants that supported my academic and research journey:
-    </p>
-    <div class="items">
-      <div class="item bg-medium py-2">
-        <h3>ESKAS Scholarship</h3>
-        <p>Swiss Government Excellence Scholarship for Postdoctoral Research at the University of Bern.</p>
-      </div>
-      <div class="item bg-light py-2">
-        <h3>Hazler Grant</h3>
-        <p>Support for innovation and interdisciplinary research in immersive learning technologies.</p>
+
+  <!-- Section: Grants -->
+  <section id="grants" class="py-3 text-center">
+    <div class="container">
+      <h2 class="section-title">Grants</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">
+        I've been honored to receive prestigious grants that supported my academic and research journey:
+      </p>
+      <div class="items">
+        <div class="item bg-medium">
+          <h3>ESKAS Scholarship</h3>
+          <p>Swiss Government Excellence Scholarship for Postdoctoral Research at the University of Bern.</p>
+        </div>
+        <div class="item bg-light">
+          <h3>Hazler Grant</h3>
+          <p>Support for innovation and interdisciplinary research in immersive learning technologies.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Section B: Skills -->
+  <!-- Section B: Technical Skills -->
   <section id="about-b" class="bg-dark py-3">
     <div class="container text-center">
       <h2 class="section-title">Technical Skills</h2>
@@ -117,29 +128,34 @@
 
       <h4 class="my-2">Programming & Tools</h4>
       <div class="progress"><div class="progress-bar" data-value="90%">Python</div></div>
-      <div class="progress"><div style="width:85%">MATLAB</div></div>
-      <div class="progress"><div style="width:80%">C++</div></div>
-      <div class="progress"><div style="width:75%">C#</div></div>
-      <div class="progress"><div style="width:60%">JavaScript</div></div>
+      <div class="progress"><div class="progress-bar" data-value="85%">MATLAB</div></div>
+      <div class="progress"><div class="progress-bar" data-value="80%">C++</div></div>
+      <div class="progress"><div class="progress-bar" data-value="75%">C#</div></div>
+      <div class="progress"><div class="progress-bar" data-value="60%">JavaScript</div></div>
 
       <h4 class="my-2">Game Development</h4>
-      <div class="progress"><div style="width:100%">Unreal Engine</div></div>
-      <div class="progress"><div style="width:85%">Unity</div></div>
-      <div class="progress"><div style="width:78%">Maya</div></div>
-      <div class="progress"><div style="width:80%">iClone</div></div>
-      <div class="progress"><div style="width:70%">Daz3D</div></div>
+      <div class="progress"><div class="progress-bar" data-value="100%">Unreal Engine</div></div>
+      <div class="progress"><div class="progress-bar" data-value="85%">Unity</div></div>
+      <div class="progress"><div class="progress-bar" data-value="78%">Maya</div></div>
+      <div class="progress"><div class="progress-bar" data-value="80%">iClone</div></div>
+      <div class="progress"><div class="progress-bar" data-value="70%">Daz3D</div></div>
 
       <h4 class="my-2">Machine Learning & AI</h4>
-      <div class="progress"><div style="width:86%">TensorFlow & Keras</div></div>
-      <div class="progress"><div style="width:83%">Deep Learning</div></div>
-      <div class="progress"><div style="width:83%">Sparse Representation</div></div>
-      <div class="progress"><div style="width:83%">Recommender Systems</div></div>
+      <div class="progress"><div class="progress-bar" data-value="86%">TensorFlow & Keras</div></div>
+      <div class="progress"><div class="progress-bar" data-value="83%">Deep Learning</div></div>
+      <div class="progress"><div class="progress-bar" data-value="83%">Sparse Representation</div></div>
+      <div class="progress"><div class="progress-bar" data-value="83%">Recommender Systems</div></div>
 
       <h4 class="my-2">Web Development</h4>
-      <div class="progress"><div style="width:95%">HTML</div></div>
-      <div class="progress"><div style="width:80%">CSS</div></div>
-      <div class="progress"><div style="width:60%">JavaScript</div></div>
-      <div class="progress"><div style="width:83%">Django</div></div>
+      <div class="progress"><div class="progress-bar" data-value="95%">HTML</div></div>
+      <div class="progress"><div class="progress-bar" data-value="80%">CSS</div></div>
+      <div class="progress"><div class="progress-bar" data-value="60%">JavaScript</div></div>
+      <div class="progress"><div class="progress-bar" data-value="83%">Django</div></div>
+
+      <h4 class="my-2">Languages</h4>
+      <div class="progress"><div class="progress-bar" data-value="95%">Persian (Native)</div></div>
+      <div class="progress"><div class="progress-bar" data-value="80%">English (Fluent)</div></div>
+      <div class="progress"><div class="progress-bar" data-value="50%">German (Intermediate)</div></div>
     </div>
   </section>
 
@@ -157,5 +173,23 @@
       </div>
     </div>
   </footer>
+
+  <!-- JavaScript to animate bars -->
+  <script>
+    function animateSkills() {
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        const top = rect.top + window.scrollY;
+        if (window.scrollY + window.innerHeight > top + 20) {
+          const target = bar.dataset.value;
+          bar.style.width = target;
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateSkills);
+    window.addEventListener('load', animateSkills);
+  </script>
+
 </body>
 </html>
