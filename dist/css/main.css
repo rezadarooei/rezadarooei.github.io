@@ -644,7 +644,11 @@ img {
    MOBILE MENU FIXES (Paste at bottom of main.css)
    ========================================= */
 
-/* 1. Style for the LLM Resume Button */
+/* =========================================
+   MOBILE MENU RESTORATION (Paste at bottom of main.css)
+   ========================================= */
+
+/* 1. Fix the Button Size and Style */
 .btn-nav-highlight {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff !important;
@@ -652,51 +656,55 @@ img {
     border-radius: 50px;
     font-weight: bold;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border: none;
-    margin: 5px 0;
-    display: inline-block;
+    /* Ensure it behaves like a button, not a block */
+    display: inline-block; 
+    width: auto; 
 }
 
-/* 2. Animation keyframes */
+/* 2. Animations */
 .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s ease-out forwards; }
 .fade-in-delay-1 { animation-delay: 0.3s; }
 .fade-in-delay-2 { animation-delay: 0.6s; }
 .fade-in-delay-3 { animation-delay: 0.9s; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-/* 3. CLEAN MOBILE LAYOUT FIX */
+/* 3. CLEAN MOBILE LAYOUT (Transparent & Compact) */
 @media (max-width: 800px) {
     
-    /* Fix the background: Darken the IMAGE instead of adding a black box */
+    /* FIX 1: Darken the background image slightly so white text pops, 
+       but keep the image visible (NO black boxes) */
     #header-home {
-        /* This overlay makes text readable without blocking the image */
-        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/showcase2.jpg") no-repeat center center/cover !important;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/showcase2.jpg") no-repeat center center/cover !important;
         height: auto !important;
         min-height: 100vh;
-        padding-bottom: 3rem;
-        overflow-y: visible !important;
+        padding-bottom: 2rem;
+        overflow: hidden;
     }
 
-    /* Make the Navigation transparent and compact */
+    /* FIX 2: Make the nav container transparent and compact */
     #main-nav {
-        background: transparent !important; /* No more black box */
+        background: transparent !important; /* REMOVES THE BLACK BOX */
         flex-direction: column;
         align-items: center;
         padding-top: 1rem;
         width: 100%;
+        height: auto;
     }
 
+    /* Stack items vertically but keep them centered */
     #main-nav ul {
         flex-direction: column;
         align-items: center;
-        padding: 0;
         width: 100%;
+        padding: 0;
     }
 
-    /* Reduce spacing so it doesn't take up the whole screen */
+    /* Reduce spacing between items */
     #main-nav li {
         padding: 0.5rem 0; 
+        width: auto; /* Prevents full-width bars */
     }
 
     #main-nav a {
@@ -704,18 +712,15 @@ img {
         color: #fff !important;
     }
 
-    /* Fix the Main Text "I am Reza" */
-    #header-home .header-content {
-        display: block !important; /* Force it to show */
-        padding-top: 1rem !important; /* Pull it up closer to menu */
-    }
-
-    #header-home h1 {
-        font-size: 2.5rem !important; /* Resize text for mobile */
-        margin-top: 0.5rem;
+    /* FIX 3: Ensure the "I Am Reza" text is visible and padded correctly */
+    .header-content {
+        padding-top: 2rem !important; 
+        display: block !important;
     }
     
-    #header-home .lead {
-        font-size: 1.1rem !important;
+    /* Adjust text size for mobile */
+    #header-home h1 {
+        font-size: 2.5rem !important;
+        margin-top: 1rem;
     }
 }
