@@ -640,20 +640,22 @@ img {
   color: #fff;
   font-size: 0.95rem;
 }
-/* --- NEW STYLES FOR BUTTON AND MOBILE FIXES --- */
+/* =========================================
+   MOBILE MENU FIXES (Paste at bottom of main.css)
+   ========================================= */
 
-/* --- FIXED MOBILE MENU & LLM BUTTON --- */
-
-/* 1. Style for the LLM Resume Button */
+/* 1. Style for the LLM Resume Button (Gradient Pill) */
 .btn-nav-highlight {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff !important;
-    padding: 0.5rem 1.5rem !important;
+    padding: 0.8rem 2rem !important; /* Larger padding for mobile touch */
     border-radius: 50px;
     font-weight: bold;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border: none;
+    margin: 10px 0; /* Space above and below button */
+    display: inline-block;
 }
 
 /* 2. Animations */
@@ -663,27 +665,29 @@ img {
 .fade-in-delay-3 { animation-delay: 0.9s; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-/* 3. CRITICAL MOBILE FIXES */
+/* 3. CRITICAL LAYOUT FIXES FOR MOBILE */
 @media (max-width: 800px) {
     
-    /* FIX THE "CUT OFF" ISSUE: Allow header to grow taller */
+    /* FIX: Force the header to be tall enough to fit the menu */
     #header-home {
-        height: auto !important; 
-        min-height: 100vh; /* Optional: keeps it full screen */
+        height: auto !important; /* Overrides the '10rem' limit */
+        min-height: 100vh;       /* Ensures it covers the whole screen */
         background-position: center top;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;    /* Extra space at bottom so nothing is cut */
+        overflow: visible !important; /* Allows content to show */
     }
 
-    /* Fix the container layout */
+    /* FIX: The Navigation Container */
     #main-nav {
         flex-direction: column;
         align-items: center;
-        background: rgba(0, 0, 0, 0.85); /* Dark background to read text */
+        background: rgba(0, 0, 0, 0.9); /* Dark background to read text */
         width: 100%;
-        padding: 1rem 0 2rem 0;
-        margin-bottom: 2rem;
+        padding: 2rem 0; /* Padding top and bottom */
+        height: auto;
     }
 
+    /* FIX: Stack the list items */
     #main-nav ul {
         flex-direction: column;
         padding: 0;
@@ -691,26 +695,22 @@ img {
         text-align: center;
     }
 
+    /* FIX: Spacing for list items */
     #main-nav li {
-        padding: 10px 0; /* Give space between links */
+        padding: 15px 0; /* More space between links */
         width: 100%;
-    }
-
-    #main-nav a {
-        font-size: 1.1rem;
         display: block;
     }
 
-    /* Adjust the LLM button spacing on mobile */
-    .btn-nav-highlight {
-        display: inline-block;
-        margin-top: 5px;
-        margin-bottom: 5px;
+    #main-nav a {
+        font-size: 1.2rem;
+        display: block;
+        color: #fff; /* Ensure text is white */
     }
 
-    /* Ensure the "I Am Reza..." text pushes down */
+    /* FIX: Ensure the "I am Reza" text pushes down and is visible */
     .header-content {
-        padding-top: 1rem !important;
-        display: block !important; /* Force it to show if hidden */
+        padding-top: 2rem !important;
+        display: block !important;
     }
 }
