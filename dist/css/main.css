@@ -645,22 +645,22 @@ img {
    ========================================= */
 
 /* =========================================
-   MOBILE MENU RESTORATION (Paste at bottom of main.css)
+   UNIVERSAL MOBILE FIX (Paste at bottom of main.css)
    ========================================= */
 
-/* 1. Fix the Button Size and Style */
+/* 1. The LLM Resume Button (Gradient Pill) */
 .btn-nav-highlight {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff !important;
-    padding: 0.6rem 1.5rem !important;
+    padding: 0.5rem 1.5rem !important;
     border-radius: 50px;
     font-weight: bold;
+    font-size: 1rem;
     white-space: nowrap;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: none;
-    /* Ensure it behaves like a button, not a block */
-    display: inline-block; 
-    width: auto; 
+    display: inline-block;
+    margin-top: 5px;
 }
 
 /* 2. Animations */
@@ -670,57 +670,76 @@ img {
 .fade-in-delay-3 { animation-delay: 0.9s; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-/* 3. CLEAN MOBILE LAYOUT (Transparent & Compact) */
+/* 3. MOBILE LAYOUT - WORKS ON WHITE AND DARK PAGES */
 @media (max-width: 800px) {
     
-    /* FIX 1: Darken the background image slightly so white text pops, 
-       but keep the image visible (NO black boxes) */
-    #header-home {
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/showcase2.jpg") no-repeat center center/cover !important;
-        height: auto !important;
-        min-height: 100vh;
-        padding-bottom: 2rem;
-        overflow: hidden;
-    }
-
-    /* FIX 2: Make the nav container transparent and compact */
+    /* A. NAV CONTAINER: Solid Dark Background 
+       This ensures text is visible on both Dark Home & White About pages */
     #main-nav {
-        background: transparent !important; /* REMOVES THE BLACK BOX */
+        background-color: #222; /* Solid dark grey */
         flex-direction: column;
         align-items: center;
-        padding-top: 1rem;
         width: 100%;
-        height: auto;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow for separation */
     }
 
-    /* Stack items vertically but keep them centered */
+    #main-nav #logo {
+        margin-bottom: 1rem; /* Space below logo */
+        max-width: 60px;
+    }
+
     #main-nav ul {
         flex-direction: column;
         align-items: center;
-        width: 100%;
         padding: 0;
+        width: 100%;
+        margin: 0;
     }
 
-    /* Reduce spacing between items */
     #main-nav li {
-        padding: 0.5rem 0; 
-        width: auto; /* Prevents full-width bars */
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #333; /* subtle divider */
+    }
+    
+    /* Remove border from last item */
+    #main-nav li:last-child {
+        border-bottom: none;
     }
 
     #main-nav a {
         font-size: 1.1rem;
-        color: #fff !important;
+        color: #fff !important; /* Force white text */
+        display: block;
     }
 
-    /* FIX 3: Ensure the "I Am Reza" text is visible and padded correctly */
-    .header-content {
-        padding-top: 2rem !important; 
+    /* B. HOME PAGE SPECIFIC FIXES */
+    /* Ensure the background image covers the screen and text isn't hidden */
+    #header-home {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/showcase2.jpg") no-repeat center center/cover !important;
+        height: auto !important;
+        min-height: 100vh;
+        padding-bottom: 3rem;
+    }
+
+    #header-home .header-content {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem;
         display: block !important;
     }
     
-    /* Adjust text size for mobile */
     #header-home h1 {
-        font-size: 2.5rem !important;
+        font-size: 2.5rem;
         margin-top: 1rem;
+    }
+
+    /* C. INNER PAGE HEADER FIX (For About/Work pages) */
+    /* If you have a shorter header on other pages, this ensures it fits */
+    #header-inner {
+        height: auto !important;
+        padding-bottom: 1rem;
+        background: #333 !important; /* Match the nav background if image fails */
     }
 }
