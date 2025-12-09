@@ -66,6 +66,7 @@
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
+                    <li><a href="#ai-chat" style="color: #a777e3; font-weight: bold;">LLM Resume</a></li>
                     <li><a href="https://www.canva.com/design/DAGbi-TpbwA/k90DlQWh7rl0Ssjm3t7BWg/edit?utm_content=DAGbi-TpbwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -115,8 +116,21 @@
             </div>
         </div>
     </section>
+
+    <section id="ai-chat" class="text-center py-2" style="background: #ffffff;">
+        <div class="container">
+            <h2 class="section-title">Chat with my AI Assistant</h2>
+            <div class="bottom-line" style="margin-bottom: 2rem;"></div>
+            <p class="lead" style="margin-bottom: 2rem;">Ask questions about my experience, research, and skills.</p>
+            
+            <div style="width: 100%; min-height: 600px;">
+                <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.34.2/gradio.js"></script>
+                <gradio-app src="https://reza-darooei-career-conversation-reza.hf.space"></gradio-app>
+            </div>
+        </div>
+    </section>
+
 </body>
-    <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy;2019. All Rights Reserved.</p>
