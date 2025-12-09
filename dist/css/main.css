@@ -644,73 +644,78 @@ img {
    MOBILE MENU FIXES (Paste at bottom of main.css)
    ========================================= */
 
-/* 1. Style for the LLM Resume Button (Gradient Pill) */
+/* 1. Style for the LLM Resume Button */
 .btn-nav-highlight {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff !important;
-    padding: 0.8rem 2rem !important; /* Larger padding for mobile touch */
+    padding: 0.6rem 1.5rem !important;
     border-radius: 50px;
     font-weight: bold;
     white-space: nowrap;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border: none;
-    margin: 10px 0; /* Space above and below button */
+    margin: 5px 0;
     display: inline-block;
 }
 
-/* 2. Animations */
+/* 2. Animation keyframes */
 .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s ease-out forwards; }
 .fade-in-delay-1 { animation-delay: 0.3s; }
 .fade-in-delay-2 { animation-delay: 0.6s; }
 .fade-in-delay-3 { animation-delay: 0.9s; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-/* 3. CRITICAL LAYOUT FIXES FOR MOBILE */
+/* 3. CLEAN MOBILE LAYOUT FIX */
 @media (max-width: 800px) {
     
-    /* FIX: Force the header to be tall enough to fit the menu */
+    /* Fix the background: Darken the IMAGE instead of adding a black box */
     #header-home {
-        height: auto !important; /* Overrides the '10rem' limit */
-        min-height: 100vh;       /* Ensures it covers the whole screen */
-        background-position: center top;
-        padding-bottom: 5rem;    /* Extra space at bottom so nothing is cut */
-        overflow: visible !important; /* Allows content to show */
+        /* This overlay makes text readable without blocking the image */
+        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/showcase2.jpg") no-repeat center center/cover !important;
+        height: auto !important;
+        min-height: 100vh;
+        padding-bottom: 3rem;
+        overflow-y: visible !important;
     }
 
-    /* FIX: The Navigation Container */
+    /* Make the Navigation transparent and compact */
     #main-nav {
+        background: transparent !important; /* No more black box */
         flex-direction: column;
         align-items: center;
-        background: rgba(0, 0, 0, 0.9); /* Dark background to read text */
+        padding-top: 1rem;
         width: 100%;
-        padding: 2rem 0; /* Padding top and bottom */
-        height: auto;
     }
 
-    /* FIX: Stack the list items */
     #main-nav ul {
         flex-direction: column;
+        align-items: center;
         padding: 0;
         width: 100%;
-        text-align: center;
     }
 
-    /* FIX: Spacing for list items */
+    /* Reduce spacing so it doesn't take up the whole screen */
     #main-nav li {
-        padding: 15px 0; /* More space between links */
-        width: 100%;
-        display: block;
+        padding: 0.5rem 0; 
     }
 
     #main-nav a {
-        font-size: 1.2rem;
-        display: block;
-        color: #fff; /* Ensure text is white */
+        font-size: 1.1rem;
+        color: #fff !important;
     }
 
-    /* FIX: Ensure the "I am Reza" text pushes down and is visible */
-    .header-content {
-        padding-top: 2rem !important;
-        display: block !important;
+    /* Fix the Main Text "I am Reza" */
+    #header-home .header-content {
+        display: block !important; /* Force it to show */
+        padding-top: 1rem !important; /* Pull it up closer to menu */
+    }
+
+    #header-home h1 {
+        font-size: 2.5rem !important; /* Resize text for mobile */
+        margin-top: 0.5rem;
+    }
+    
+    #header-home .lead {
+        font-size: 1.1rem !important;
     }
 }
