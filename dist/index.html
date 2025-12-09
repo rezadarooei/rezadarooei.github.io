@@ -54,6 +54,49 @@
                 transform: translateY(0);
             }
         }
+
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) {
+            
+            /* Stack the Navbar components vertically */
+            #main-nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-top: 1rem;
+            }
+
+            /* Adjust Logo Spacing */
+            #main-nav img#logo {
+                margin-bottom: 1rem;
+                max-width: 70px; /* Resize logo slightly if needed */
+            }
+
+            /* Allow menu items to wrap nicely */
+            #main-nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0;
+                width: 100%;
+            }
+
+            /* Add space between menu items */
+            #main-nav ul li {
+                margin: 5px 10px;
+                padding: 0;
+            }
+
+            /* Make text slightly smaller on mobile to fit */
+            #main-nav ul li a {
+                font-size: 0.9rem;
+            }
+            
+            /* Push the header content down so it's not hidden behind the menu */
+            .header-content {
+                padding-top: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -66,7 +109,7 @@
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
-                    <li><a href="#ai-chat" style="color: #a777e3; font-weight: bold;">LLM Resume</a></li>
+                    <li><a href="#ai-chat" style="color: #a777e3; font-weight: bold; white-space: nowrap;">LLM Resume</a></li>
                     <li><a href="https://www.canva.com/design/DAGbi-TpbwA/k90DlQWh7rl0Ssjm3t7BWg/edit?utm_content=DAGbi-TpbwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -78,7 +121,7 @@
                         data-words='["Game Developer","Web Developer","Data Scientist","Biomedical student"]'>
                     </span>
                 </h1>
-                <p class="lead fade-in fade-in-delay-2">I'm specialize on Game development, Web development and data science</p>
+                <p class="lead fade-in fade-in-delay-2">I specialize in Game development, Web development and Data Science</p>
                 <a href="work.html" class="btn-light fade-in fade-in-delay-3">View my Work</a>
             </div>
         </div>
